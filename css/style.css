@@ -141,9 +141,9 @@ a{
 }
 /******************** about_section ********************/
 .about_section{
-    width: 100%;
-    height: 100%;
-    display: block;
+    background-image: url(/img/about.png);
+    background-position: center;
+    background-size: cover;
 }
 .about_img img{
     width: 100%;
@@ -151,45 +151,84 @@ a{
     display: block;
 }
 /********** about_title *********/
-.about_title {
-    position: relative;
-    top: 6rem;
-}
-.about_title h2 {
+.about-title h2 {
     font-size: 3rem;
     font-weight: 600;
-    color: blue;
+    color: #161616;
 }
-.about_title strong {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #ff5200;
-    margin-bottom: .7rem;
-}
-.about_title p {
+.about-title p{
     font-size: 1rem;
     line-height: 2rem;
     color: #a5a0a0;
     margin-bottom: 2rem;
 }
-.about_title .about_btn{
+.about_btn{
     display: inline-block;
-    padding: .8rem 2rem;
-    background: blue;
-    color: #fff;
     font-size: 1.1rem;
-    margin-left: 1rem;
     font-weight: 600;
+    padding: .8rem 2rem;
+    border-radius: 0.3rem;
+    background-color: #ff5200;
+    color: #fff !important;
+    position: relative;
+    z-index: 1;
+}
+.about_btn:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.about_btn::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 0.3rem;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
     transition: .5s ease-in-out;
 }
-.about_title .about_btn:hover{
-    background: #000;
+/* about-skill */
+.about-skill{
+    margin-top: 2rem;
+}
+.about-skill h4{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.skill-items{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-items ul{
+    list-style: none;
+    padding: 0;
+}
+.skill-items ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+.skill-items ul li::before{
+    content: "\f0a9" !important;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 5px;
+    color: #ff5200;
 }
 /******************** skill_section ********************/
-/* .skill_section{
-    overflow: hidden;
-} */
+.skill_section{
+    background-image: url(/img/skill-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /***************** skill_title ***************/
 .skill_title h2 {
     font-size: 4rem;
