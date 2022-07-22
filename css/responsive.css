@@ -51,7 +51,11 @@
         font-weight: 600;
     }
 /* tablate device responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
+    .service_ul {
+        margin-bottom: 2rem;
+        text-align: left;
+    }
     .tab_linkButton {
         margin-bottom: 1rem;
     }
