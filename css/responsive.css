@@ -1,0 +1,76 @@
+/*************** responsive media quari css started *****************/
+/* mobile device */
+@media only screen and (max-width: 	576px) {
+   .hero-area{
+    flex-direction: column-reverse;
+   } 
+   .hero-content {
+        margin-top: 0;
+    }
+    .hero_text h2, .about-title h2, .skill_title h2, .professional_title, .barfiller_title, .newstitle h2{
+        font-size: 1.875rem;
+    }
+    .about-title h2 {
+        margin-top: 3rem;
+    }
+    .about-title p {
+        font-size: 0.875rem;
+        line-height: normal;
+    }
+    .skill-items {
+        flex-direction: column;
+    }
+    .skill_title h2::after {
+        width: 100%;
+    }
+    .skill_title span {
+        font-size: 0.875rem;
+        display: block;
+        font-weight: 500;
+        color: #8f8f8f;
+        letter-spacing: .1rem;
+    }
+    .progress_circle {
+        text-align: center;
+    }
+    .service_title h2::after {
+        left: 0;
+    }
+    .portfolio_nav .tab_linkButton {
+        margin-bottom: 1rem;
+    }
+    .news_btn {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .newstitle h6, .testimonial_content p, .footer_widget p{
+        font-size: 0.875rem;
+    }
+    .contact_info h4 {
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .join_me {
+        display: none;
+    }
+}
