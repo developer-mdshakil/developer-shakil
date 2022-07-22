@@ -50,8 +50,16 @@
         font-size: 1.875rem;
         font-weight: 600;
     }
-
-
+/* tablate device responsive */
+@media only screen and (max-width: 768px) {
+    .tab_linkButton {
+        margin-bottom: 1rem;
+    }
+    .news_btn {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
 
 
 
